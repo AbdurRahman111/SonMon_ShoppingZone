@@ -1,8 +1,7 @@
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+{% load static %}
+
+
+
 
 <!DOCTYPE html>
 <html lang="zxx">
@@ -23,13 +22,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         }
     </script>
     <!-- Custom Theme files -->
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="{% static 'website/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
     <!-- shop css -->
-    <link href="css/shop.css" type="text/css" rel="stylesheet" media="all">
+    <link href="{% static 'website/css/shop.css' %}" type="text/css" rel="stylesheet" media="all">
     <!-- Owl Stylesheets -->
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="{% static 'website/css/style.css' %}" type="text/css" rel="stylesheet" media="all">
     <!-- font-awesome icons -->
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="{% static 'website/css/fontawesome-all.min.css' %}" rel="stylesheet">
     <!-- //Custom Theme files -->
     <!-- online-fonts -->
     <link href="//fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900" rel="stylesheet">
@@ -45,7 +44,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <nav class="top_nav d-flex pt-3 pb-1">
                 <!-- logo -->
                 <h1>
-                    <a class="navbar-brand" href="index.html">fh
+                    <a class="navbar-brand" href="index"><img src="{% static 'website/images/shoplogo2.JPG' %}" alt=" " class="img-fluid">
                     </a>
                 </h1>
                 <!-- //logo -->
@@ -120,7 +119,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home
+                            <a class="nav-link" href="index">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -130,28 +129,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <div class="px-0 container">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <a class="dropdown-item" href="men.html">T-Shirts</a>
-                                            <a class="dropdown-item" href="men.html">Coats</a>
-                                            <a class="dropdown-item" href="men.html">Shirts</a>
-                                            <a class="dropdown-item" href="men.html">Suits & Blazers</a>
-                                            <a class="dropdown-item" href="men.html">Jackets</a>
-                                            <a class="dropdown-item" href="men.html">Trousers</a>
+                                            <a class="dropdown-item" href="men">T-Shirts</a>
+                                            <a class="dropdown-item" href="men">Coats</a>
+                                            <a class="dropdown-item" href="men">Shirts</a>
+                                            <a class="dropdown-item" href="men">Suits & Blazers</a>
+                                            <a class="dropdown-item" href="men">Jackets</a>
+                                            <a class="dropdown-item" href="men">Trousers</a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a class="dropdown-item" href="men.html">T-Shirts</a>
-                                            <a class="dropdown-item" href="men.html">Trousers</a>
-                                            <a class="dropdown-item" href="men.html">Shirts</a>
-                                            <a class="dropdown-item" href="men.html">Suits & Blazers</a>
-                                            <a class="dropdown-item" href="men.html">Coats & Jackets</a>
-                                            <a class="dropdown-item" href="men.html">Jackets</a>
+                                            <a class="dropdown-item" href="men">T-Shirts</a>
+                                            <a class="dropdown-item" href="men">Trousers</a>
+                                            <a class="dropdown-item" href="men">Shirts</a>
+                                            <a class="dropdown-item" href="men">Suits & Blazers</a>
+                                            <a class="dropdown-item" href="men">Coats & Jackets</a>
+                                            <a class="dropdown-item" href="men">Jackets</a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a class="dropdown-item" href="men.html">T-Shirts</a>
-                                            <a class="dropdown-item" href="men.html">Coats</a>
-                                            <a class="dropdown-item" href="men.html">Shirts</a>
-                                            <a class="dropdown-item" href="men.html">Suits & Blazers</a>
-                                            <a class="dropdown-item" href="men.html">Jackets</a>
-                                            <a class="dropdown-item" href="men.html">Trousers</a>
+                                            <a class="dropdown-item" href="men">T-Shirts</a>
+                                            <a class="dropdown-item" href="men">Coats</a>
+                                            <a class="dropdown-item" href="men">Shirts</a>
+                                            <a class="dropdown-item" href="men">Suits & Blazers</a>
+                                            <a class="dropdown-item" href="men">Jackets</a>
+                                            <a class="dropdown-item" href="men">Trousers</a>
                                         </div>
                                     </div>
                                 </div>
@@ -163,25 +162,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <div class="px-0 container">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <a class="dropdown-item" href="women.html">Dresses</a>
-                                            <a class="dropdown-item" href="women.html">T-shirts</a>
-                                            <a class="dropdown-item" href="women.html">Skirts</a>
-                                            <a class="dropdown-item" href="women.html">Jeans</a>
-                                            <a class="dropdown-item" href="women.html">Tunics</a>
+                                            <a class="dropdown-item" href="women">Dresses</a>
+                                            <a class="dropdown-item" href="women">T-shirts</a>
+                                            <a class="dropdown-item" href="women">Skirts</a>
+                                            <a class="dropdown-item" href="women">Jeans</a>
+                                            <a class="dropdown-item" href="women">Tunics</a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a class="dropdown-item" href="women.html">T-shirts</a>
-                                            <a class="dropdown-item" href="women.html">Dresses</a>
-                                            <a class="dropdown-item" href="women.html">Tunics</a>
-                                            <a class="dropdown-item" href="women.html">Skirts</a>
-                                            <a class="dropdown-item" href="women.html">Jeans</a>
+                                            <a class="dropdown-item" href="women">T-shirts</a>
+                                            <a class="dropdown-item" href="women">Dresses</a>
+                                            <a class="dropdown-item" href="women">Tunics</a>
+                                            <a class="dropdown-item" href="women">Skirts</a>
+                                            <a class="dropdown-item" href="women">Jeans</a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a class="dropdown-item" href="women.html">Dresses</a>
-                                            <a class="dropdown-item" href="women.html">T-shirts</a>
-                                            <a class="dropdown-item" href="women.html">Skirts</a>
-                                            <a class="dropdown-item" href="women.html">Jeans</a>
-                                            <a class="dropdown-item" href="women.html">Tunics</a>
+                                            <a class="dropdown-item" href="women">Dresses</a>
+                                            <a class="dropdown-item" href="women">T-shirts</a>
+                                            <a class="dropdown-item" href="women">Skirts</a>
+                                            <a class="dropdown-item" href="women">Jeans</a>
+                                            <a class="dropdown-item" href="women">Tunics</a>
                                         </div>
                                     </div>
                                 </div>
@@ -194,49 +193,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <div class="row w3_kids  py-3">
                                         <div class="col-md-3 ">
                                             <span class="bg-light">Boy's Clothing</span>
-                                            <a class="dropdown-item" href="boys.html">T-Shirts</a>
-                                            <a class="dropdown-item" href="boys.html">Coats</a>
-                                            <a class="dropdown-item" href="boys.html">Shirts</a>
-                                            <a class="dropdown-item" href="boys.html">Suits & Blazers</a>
-                                            <a class="dropdown-item" href="boys.html">Jackets</a>
-                                            <a class="dropdown-item" href="boys.html">Trousers</a>
+                                            <a class="dropdown-item" href="boys">T-Shirts</a>
+                                            <a class="dropdown-item" href="boys">Coats</a>
+                                            <a class="dropdown-item" href="boys">Shirts</a>
+                                            <a class="dropdown-item" href="boys">Suits & Blazers</a>
+                                            <a class="dropdown-item" href="boys">Jackets</a>
+                                            <a class="dropdown-item" href="boys">Trousers</a>
                                         </div>
                                         <div class="col-md-3">
-                                            <a class="dropdown-item mt-4" href="boys.html">T-Shirts</a>
-                                            <a class="dropdown-item" href="boys.html">Coats</a>
-                                            <a class="dropdown-item" href="boys.html">Shirts</a>
-                                            <a class="dropdown-item" href="boys.html">Suits & Blazers</a>
-                                            <a class="dropdown-item" href="boys.html">Jackets</a>
-                                            <a class="dropdown-item" href="boys.html">Trousers</a>
+                                            <a class="dropdown-item mt-4" href="boys">T-Shirts</a>
+                                            <a class="dropdown-item" href="boys">Coats</a>
+                                            <a class="dropdown-item" href="boys">Shirts</a>
+                                            <a class="dropdown-item" href="boys">Suits & Blazers</a>
+                                            <a class="dropdown-item" href="boys">Jackets</a>
+                                            <a class="dropdown-item" href="boys">Trousers</a>
                                         </div>
                                         <div class="col-md-3">
                                             <span>Girl's Clothing</span>
-                                            <a class="dropdown-item" href="girls.html">T-shirts</a>
-                                            <a class="dropdown-item" href="girls.html">Dresses</a>
-                                            <a class="dropdown-item" href="girls.html">Tunics</a>
-                                            <a class="dropdown-item" href="girls.html">Skirts</a>
-                                            <a class="dropdown-item" href="girls.html">Jeans</a>
-                                            <a class="dropdown-item" href="girls.html">Midi</a>
+                                            <a class="dropdown-item" href="girls">T-shirts</a>
+                                            <a class="dropdown-item" href="girls">Dresses</a>
+                                            <a class="dropdown-item" href="girls">Tunics</a>
+                                            <a class="dropdown-item" href="girls">Skirts</a>
+                                            <a class="dropdown-item" href="girls">Jeans</a>
+                                            <a class="dropdown-item" href="girls">Midi</a>
                                         </div>
                                         <div class="col-md-3">
-                                            <a class="dropdown-item  mt-4" href="girls.html">Tunics</a>
-                                            <a class="dropdown-item" href="girls.html">Skirts</a>
-                                            <a class="dropdown-item" href="girls.html">T-shirts</a>
-                                            <a class="dropdown-item" href="girls.html">Dresses</a>
-                                            <a class="dropdown-item" href="girls.html">Jeans</a>
+                                            <a class="dropdown-item  mt-4" href="girls">Tunics</a>
+                                            <a class="dropdown-item" href="girls">Skirts</a>
+                                            <a class="dropdown-item" href="girls">T-shirts</a>
+                                            <a class="dropdown-item" href="girls">Dresses</a>
+                                            <a class="dropdown-item" href="girls">Jeans</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact</a>
+                            <a class="nav-link active" href="contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -249,15 +248,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- inner banner -->
 	<div class="ibanner_w3 pt-sm-5 pt-3">
 		<h4 class="head_agileinfo text-center text-capitalize text-center pt-5">
-			<span>f</span>ashion
-			<span>h</span>ub</h4>
+			<span>M</span>on
+            <span>S</span>on</h4>
 	</div>
 	<!-- //inner banner -->
     <!-- breadcrumbs -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
+                <a href="index">Home</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
         </ol>
@@ -350,7 +349,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <ul>
 
                                 <li>
-                                    <a href="payment.html">Payment</a>
+                                    <a href="payment">Payment</a>
                                 </li>
                                 <li>
                                     <a href="#">Shipping</a>
@@ -359,7 +358,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <a href="#">Cancellation & Returns</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">FAQ</a>
+                                    <a href="faq">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -369,32 +368,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <h4>Latest Blog</h4>
                             <div class="footer-v2grid1 row">
                                 <div class="col-4 footer-v2grid1-left">
-                                    <a href="blog.html">
-                                        <img src="images/bl2.jpg" alt=" " class="img-fluid">
+                                    <a href="blog">
+                                        <img src="{% static 'website/images/bl2.jpg' %}" alt=" " class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-8 footer-v2grid1-right p-0">
-                                    <a href="blog.html">eveniie arcet ut moles morbi dapiti</a>
+                                    <a href="blog">eveniie arcet ut moles morbi dapiti</a>
                                 </div>
                             </div>
                             <div class="footer-v2grid1 row my-2">
                                 <div class="col-4 footer-v2grid1-left">
-                                    <a href="blog.html">
-                                        <img src="images/bl1.jpg" alt=" " class="img-fluid">
+                                    <a href="blog">
+                                        <img src="{% static 'website/images/bl1.jpg' %}" alt=" " class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-8 footer-v2grid1-right p-0">
-                                    <a href="blog.html">earum rerum tenmorbi dapiti et</a>
+                                    <a href="blog">earum rerum tenmorbi dapiti et</a>
                                 </div>
                             </div>
                             <div class="footer-v2grid1 row">
                                 <div class="col-4 footer-v2grid1-left">
-                                    <a href="blog.html">
-                                        <img src="images/bl3.jpg" alt=" " class="img-fluid">
+                                    <a href="blog">
+                                        <img src="{% static 'website/images/bl3.jpg' %}" alt=" " class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-8 footer-v2grid1-right p-0">
-                                    <a href="blog.html">morbi dapiti eveniet ut molesti</a>
+                                    <a href="blog">morbi dapiti eveniet ut molesti</a>
                                 </div>
                             </div>
                         </div>
@@ -431,48 +430,48 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </h4>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl4.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl4.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl1.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl1.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl6.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl6.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl5.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl5.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
 
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl2.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl2.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl3.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl3.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl6.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl6.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl4.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl4.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                             <div class="footer-v2grid-instagram">
                                 <a href="#">
-                                    <img src="images/bl5.jpg" alt=" " class="img-fluid">
+                                    <img src="{% static 'website/images/bl5.jpg' %}" alt=" " class="img-fluid">
                                 </a>
                             </div>
                         </div>
@@ -482,52 +481,52 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <h4>popular tags</h4>
                             <ul class="w3-tag2">
                                 <li>
-                                    <a href="shop.html">amet</a>
+                                    <a href="shop">amet</a>
                                 </li>
                                 <li>
-                                    <a href="men.html">placerat</a>
+                                    <a href="men">placerat</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">Proin </a>
+                                    <a href="shop">Proin </a>
                                 </li>
                                 <li>
-                                    <a href="boys.html">vehicula</a>
+                                    <a href="boys">vehicula</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">diam</a>
+                                    <a href="shop">diam</a>
                                 </li>
                                 <li>
-                                    <a href="women.html">velit</a>
+                                    <a href="women">velit</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">felis</a>
+                                    <a href="shop">felis</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">mauris</a>
+                                    <a href="shop">mauris</a>
                                 </li>
                                 <li>
-                                    <a href="girls.html">amet</a>
+                                    <a href="girls">amet</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">placerat</a>
+                                    <a href="shop">placerat</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">Proin </a>
+                                    <a href="shop">Proin </a>
                                 </li>
                                 <li>
-                                    <a href="index.html">vehicula</a>
+                                    <a href="index">vehicula</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">diam</a>
+                                    <a href="shop">diam</a>
                                 </li>
                                 <li>
-                                    <a href="men.html">velit</a>
+                                    <a href="men">velit</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">felis</a>
+                                    <a href="shop">felis</a>
                                 </li>
                                 <li>
-                                    <a href="women.html">mauris</a>
+                                    <a href="women">mauris</a>
                                 </li>
                             </ul>
                         </div>
@@ -539,16 +538,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="container">
                         <ul class="bottom-links-agile">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index">Home</a>
                             </li>
                             <li>
-                                <a href="about.html">About Us</a>
+                                <a href="about">About Us</a>
                             </li>
                             <li>
-                                <a href="shop.html">Shop</a>
+                                <a href="shop">Shop</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="contact">Contact</a>
                             </li>
 
                         </ul>
@@ -590,28 +589,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <h5>Payment Method</h5>
                         <ul class="mt-4">
                             <li class="list-inline-item">
-                                <img src="images/pay2.png" alt="">
+                                <img src="{% static 'website/images/pay2.png' %}" alt="">
                             </li>
                             <li class="list-inline-item">
-                                <img src="images/pay5.png" alt="">
+                                <img src="{% static 'website/images/pay5.png' %}" alt="">
                             </li>
                             <li class="list-inline-item">
-                                <img src="images/pay3.png" alt="">
+                                <img src="{% static 'website/images/pay3.png' %}" alt="">
                             </li>
                             <li class="list-inline-item">
-                                <img src="images/pay7.png" alt="">
+                                <img src="{% static 'website/images/pay7.png' %}" alt="">
                             </li>
                             <li class="list-inline-item">
-                                <img src="images/pay8.png" alt="">
+                                <img src="{% static 'website/images/pay8.png' %}" alt="">
                             </li>
                             <li class="list-inline-item ">
-                                <img src="images/pay9.png" alt="">
+                                <img src="{% static 'website/images/pay9.png' %}" alt="">
                             </li>
                         </ul>
                     </div>
                     <div class="cpy-right align-self-center">
                         <h2 class="agile_btxt">
-                            <a href="index.html">
+                            <a href="index">
                                 <span>M</span>on<span>S</span>on</a>
                         </h2>
                         <p>© 2020 MonSon All rights reserved | Design by
@@ -636,7 +635,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="modal-body pt-3 pb-5 px-sm-5">
                     <div class="row">
                         <div class="col-md-6 align-self-center">
-                            <img src="images/p3.png" class="img-fluid" alt="login_image" />
+                            <img src="{% static 'website/images/shoplogo2.JPG' %}" class="img-fluid" alt="login_image" />
                         </div>
                         <div class="col-md-6">
                             <form action="#" method="post">
@@ -691,7 +690,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="modal-body  pt-3 pb-5 px-sm-5">
                     <div class="row">
                         <div class="col-md-6 align-self-center">
-                            <img src="images/p3.png" class="img-fluid" alt="login_image" />
+                            <img src="{% static 'website/images/shoplogo2.JPG' %}" class="img-fluid" alt="login_image" />
                         </div>
                         <div class="col-md-6">
                             <form action="#" method="post">
@@ -715,7 +714,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- signin Modal -->
     <!-- js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="{% static 'website/js/jquery-2.2.3.min.js' %}"></script>
     <!-- //js -->
     <!-- smooth dropdown -->
     <script>
@@ -747,7 +746,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- script for password match -->
     <!-- cart-js -->
-    <script src="js/minicart.js"></script>
+    <script src="{% static 'website/js/minicart.js' %}"></script>
     <script>
         hub.render();
 
@@ -763,8 +762,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //cart-js -->
     <!-- start-smooth-scrolling -->
-    <script src="js/move-top.js"></script>
-    <script src="js/easing.js"></script>
+    <script src="{% static 'website/js/move-top.js' %}"></script>
+    <script src="{% static 'website/js/easing.js' %}"></script>
     <script>
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -795,12 +794,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         });
     </script>
-    <script src="js/SmoothScroll.min.js"></script>
+    <script src="{% static 'website/js/SmoothScroll.min.js' %}"></script>
     <!-- //smooth-scrolling-of-move-up -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+    <script src="{% static 'website/js/bootstrap.js' %}"></script>
 </body>
 
 </html>
